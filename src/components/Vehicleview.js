@@ -10,7 +10,7 @@ import TripTable from "./TripTable";
 import { conData } from "./context";
 
 const Vehicleview = () => {
-  const [vehicle, addV] = useContext(conData);
+  const [vehicle] = useContext(conData);
   const [vehicle1,setVe] = useState(vehicle);
   const veh = [
     "vehicle1",
