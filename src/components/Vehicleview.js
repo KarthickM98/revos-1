@@ -1,17 +1,17 @@
-import React, { useContext, useState } from "react";
+import React, { useState } from "react";
 // import { Link } from "react-router-dom";
 import Popover from "@mui/material/Popover";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
 import Autocomplete from "@mui/material/Autocomplete";
-import setdata from "./context"
-import { useSelector,useDispatch } from "react-redux";
-import { updatevehicle } from "./actions/action";
+// import setdata from "./context"
+// import { useSelector,useDispatch } from "react-redux";
+// import { updatevehicle } from "./actions/action";
 
 const Vehicleview = () => {
-  const dispatch = useDispatch();
-  const state = useSelector(state=>state.updatevehicle)
+  // const dispatch = useDispatch();
+  // const state = useSelector(state=>state.updatevehicle)
   const vehicle = [
     "vehicle1",
     "vehicle2",
@@ -26,7 +26,7 @@ const Vehicleview = () => {
   const [value, setValue] = useState(vehicle[0]);
   const open = Boolean(onclk);
   const id = open ? "simple-popover" : undefined;
-  const sdata = useContext(setdata)
+  // const sdata = useContext(setdata)
   const handleClose = () => {
     setClk(null);
   };
