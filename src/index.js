@@ -2,14 +2,14 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
-import { Provider } from "react-redux";
-import store from './store'
+import { BrowserRouter as Router } from "react-router-dom";
+import { DataContext } from "./components/context";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Provider store={store}>
+  <Router>
+    <DataContext>
       <App />
-    </Provider>
-  </React.StrictMode>,
+    </DataContext>
+  </Router>,
   document.getElementById("root")
 );
