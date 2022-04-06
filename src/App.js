@@ -1,5 +1,4 @@
 import "./App.css";
-import { Route, Routes, Navigate } from "react-router-dom";
 import React from "react";
 import Vehicleview from "./components/Vehicleview";
 
@@ -16,9 +15,6 @@ function App() {
       >
         <Vehicleview />
       </div>
-      <Routes>
-        <Route path="/" element={<Navigate to="/home" />} />
-      </Routes>
     </>
   );
 }
